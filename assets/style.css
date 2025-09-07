@@ -1,3 +1,44 @@
+/* Multicolor flashing effect */
+.flashing {
+    font-weight: bold;
+    animation: flash-multicolor 1.2s infinite linear;
+}
+@keyframes flash-multicolor {
+    0% { color: #F2B111; }
+    20% { color: #e74c3c; }
+    40% { color: #27ae60; }
+    60% { color: #2980b9; }
+    80% { color: #f39c12; }
+    100% { color: #F2B111; }
+}
+/* Event card image covers 70% of card height, all cards same height */
+.event-card {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.event-card .card-img-top {
+    height: 70%;
+    object-fit: cover;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+.event-card .card-body {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+/* Highlight event card on hover */
+.event-card {
+    transition: box-shadow 0.2s, transform 0.2s;
+}
+.event-card:hover {
+    box-shadow: 0 8px 24px rgba(199, 147, 14, 0.25), 0 1.5px 8px rgba(0,44,91,0.12);
+    transform: translateY(-2px) scale(1.02);
+    z-index: 2;
+}
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
