@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to get Driver's License? | NSSA WVU</title>
+    <title>Dashain 2025 | NSSA WVU</title>
     <link rel="icon" type="image/png" href="/assets/images/nssa_logo.png">
-
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/style.css">
 </head>
 
-<body>
+<body class="bg-light">
     <!-- NavBar -->
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002C5B;">
         <div class="container">
@@ -42,9 +42,41 @@
     </nav>
 
     <div class="section container bg-white rounded-4 shadow p-4 my-4">
-        <h2 class="text-primary mb-4">How to apply for Driver's License?</h2>
-        <p>Coming Soon ...</p>
+        <h2 class="text-primary mb-4">Dashain Cultural Program 2025</h2>
+        
+        <p>Is it only me, or do you also feel the festivity in the air? Our greatest festival, Dashain, is right around the corner, and we want to make this year’s celebration truly grand. To do that, we need your support and participation. 🎉</p>
+        <ul class="list-unstyled mb-4">
+            <li>📅 <strong>Date:</strong> Saturday, October 4th</li>
+            <li>📍 <strong>Location:</strong> Chestnut Ridge Park – Dining Hall</li>
+        </ul>
+        <p>This year’s celebration will feature:</p>
+        <ul>
+            <li>✨ Tika Program</li>
+            <li>✨ Dances, Songs, and Acting Performances</li>
+            <li>✨ Fun Games and Activities</li>
+        </ul>
+        <p>We warmly encourage everyone to participate in performances to showcase your talents and make the program lively.</p>
+        <p>More details about the exact timing and schedule will be shared as the date approaches. Please stay tuned!</p>
+        <p>If you have any questions, feel free to reach out.<br>
+        Looking forward to celebrating together and making this Dashain a memorable one with you all. 🌺</p>
+        
+        <hr>
+        <!-- <h4 class="mt-5 mb-3">Gallery</h4> -->
+        <div class="row g-3" id="gallery"></div>
+        <!-- Modal for big image view -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body p-0 text-center">
+                        <img id="modalImage" src="" alt="Big View" class="img-fluid rounded" style="max-height:80vh;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/gallery.js"></script>
+        <script>populateGallery('/assets/images/events/2025/dashain', 0);</script>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

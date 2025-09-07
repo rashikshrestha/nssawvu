@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camping 2025 | NSSA WVU</title>
+    <link rel="icon" type="image/png" href="/assets/images/nssa_logo.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body class="bg-light">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002C5B;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
+                <img src="/assets/images/nssa_logo.png" alt="NSSA" width="32" height="32"
+                    class="d-inline-block align-text-top rounded shadow-sm">
+                <span class="fw-bold" style="color:#F2B111;">NSSA WVU</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/about.html">About
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/events.html">Our
+                            Events</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/help.html">Seek
+                            Help</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/contact.html">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section container bg-white rounded-4 shadow p-4 my-4">
+        <h2 class="text-primary mb-4">Camping 2025</h2>
+        <p>Camping season is here and we're excited to announce that our NSSA camping trip is officially set for <strong>August 8–10, 2025</strong>! This time, we’ll be heading to <strong>Prince Gallitzin State Park in Pennsylvania</strong> — about 2 hours and 30 minutes from Morgantown. We’ve reserved a rustic group tent site (Site 007), so get ready for a weekend full of fresh air, campfires, and summer vibes!</p>
+        <p>More details about rides, food, and activities will be shared as the date gets closer — but for now, save the date, and let us know if you’re in!</p>
+        <h5 class="mt-4">Below are the essential trip details to keep you on track:</h5>
+        <ul class="list-unstyled mb-4">
+            <li><strong>📍 Campsite Details</strong></li>
+            <li>Site Name: 007 – Group Tent Camping Area</li>
+            <li>Location: Prince Gallitzin State Park, Pennsylvania</li>
+            <li>Coordinates: 40.66932, -78.54128</li>
+            <li>Check-in: 3:00 PM, Friday, August 8</li>
+            <li>Check-out: 3:00 PM, Sunday, August 10</li>
+            <li>Site Type: Rustic Organized Group Tenting Site</li>
+        </ul>
+        <h6>🌡️ Important Notes</h6>
+        <ul>
+            <li>It will get chilly at night! The temperature is expected to drop to 58°F, so please pack warm clothing and blankets to stay comfortable.</li>
+            <li>🧊 Everyone <strong>MUST</strong> bring one full case of drinking water in their car. We will be in a rustic area, so this is mandatory for safety and convenience.</li>
+        </ul>
+        <h6>🎒 Packing Checklist</h6>
+        <strong>Essentials (must bring):</strong>
+        <ul>
+            <li>Tent</li>
+            <li>Sleeping pad / Air mattress</li>
+            <li>Blankets</li>
+            <li>Pillow</li>
+            <li>Slippers</li>
+            <li>Headlamp or flashlight</li>
+            <li>Insect repellent</li>
+            <li>Camp chairs</li>
+            <li>🚰 One full case of water</li>
+            <li>🧻 Toilet paper – even if pit toilets are stocked, backup is smart</li>
+            <li>🧼 Hand sanitizer / Wet wipes – for hygiene at the campsite</li>
+        </ul>
+        <strong>Optional (nice to have):</strong>
+        <ul>
+            <li>Swimwear (there’s a lake and beach nearby)</li>
+            <li>Board games</li>
+            <li>⚽ Outdoor games (football, volleyball, frisbee, etc.)</li>
+        </ul>
+        <h6 class="text-danger">⚠️ VERY IMPORTANT: NO ALCOHOL POLICY</h6>
+        <p>Please remember that alcohol is strictly prohibited in all Pennsylvania state parks, including Prince Gallitzin.<br>
+        Violations can lead to fines or removal from the park. Let’s all be responsible and make sure we follow the rules.</p>
+        <p>📎 You can review the park rules here:<br>
+        👉 <a href="https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/rules-and-regulations" target="_blank">PA State Park Rules</a></p>
+
+        <p>As always, feel free to reach out to me or any of the NSSA committee members if you have any questions or ideas.</p>
+
+        <hr>
+        <h4 class="mt-5 mb-3">Gallery</h4>
+        <div class="row g-3" id="gallery"></div>
+        <!-- Modal for big image view -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body p-0 text-center">
+                        <img id="modalImage" src="" alt="Big View" class="img-fluid rounded" style="max-height:80vh;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/gallery.js"></script>
+        <script>populateGallery('/assets/images/events/2025/camping', 11);</script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
