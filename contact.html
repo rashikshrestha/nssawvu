@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | NSSA WVU</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002C5B;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                <img src="assets/images/nssa_logo.png" alt="NSSA" width="32" height="32" class="d-inline-block align-text-top rounded shadow-sm">
+                <span class="fw-bold" style="color:#F2B111;">NSSA WVU</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" style="color:#F2B111;" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" style="color:#F2B111;" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" style="color:#F2B111;" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold" style="color:#F2B111;" href="events.html">Our Events</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <div class="header">
+        <div style="display:flex;align-items:center;justify-content:center;gap:18px;">
+            <h1 style="text-align:center;margin:0;">Nepalese Students and Scholars Association<br><span style="font-size:1.5rem; color:#F2B111;">of West Virginia University (NSSA)</span></h1>
+            <img src="assets/images/nssa-logo.png" alt="NSSA Logo" style="height:60px;margin-left:18px;box-shadow:0 2px 8px #002C5B33;border-radius:8px;">
+        </div>
+        <p style="text-align:center;">Building Community, Leadership, and Excellence</p>
+    </div> -->
+    <div class="section container bg-white rounded-4 shadow p-4 my-4">
+    <!-- <div class="section"> -->
+        <h2 class="text-primary mb-4">Contact Us</h2>
+        <form class="contact-form" onsubmit="submitContactForm(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <button class="button" type="submit">Send Message</button>
+        </form>
+    </div>
+    <div class="footer">
+        &copy; 2025 NSSA-WVU. All rights reserved.
+    </div>
+    <script>
+    function submitContactForm(event) {
+        event.preventDefault();
+        alert('Thank you for contacting NSSA! We will get back to you soon.');
+        event.target.reset();
+    }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
