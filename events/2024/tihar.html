@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tihar 2024 | NSSA WVU</title>
+    <link rel="icon" type="image/png" href="/assets/images/nssa_logo.png">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+
+<body class="bg-light">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #002C5B;">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="/index.html">
+                <img src="/assets/images/nssa_logo.png" alt="NSSA" width="32" height="32"
+                    class="d-inline-block align-text-top rounded shadow-sm">
+                <span class="fw-bold" style="color:#F2B111;">NSSA WVU</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/index.html">Home</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/about.html">About
+                            Us</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/events.html">Our
+                            Events</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/help.html">Seek
+                            Help</a></li>
+                    <li class="nav-item"><a class="nav-link fw-bold" style="color:#F2B111;" href="/contact.html">Contact
+                            Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="section container bg-white rounded-4 shadow p-4 my-4">
+        <h2 class="text-primary mb-4">Tihar Cultural Program 2024</h2>
+
+        <p>🪔 <strong>Happy Tihar and Shuva Deepawali to all our NSSA-WVU families!</strong> 🎆</p>
+        <p>In celebration of Deepawali, NSSA is excited to continue our tradition of playing <strong>Deusi-Bhailo</strong>! 🥁🎤<br>
+        This year, we have the pleasure of being hosted by four generous families:</p>
+        <ul>
+            <li>🏠 CR Bhatta Dai and family, Morgantown</li>
+            <li>🏠 Dharendra Thapa Dai and family, Morgantown</li>
+            <li>🏠 Bishnu Sedai Dai and family, Fairmont</li>
+            <li>🏠 Ganga P. Sharma Dai and family, Fairmont</li>
+        </ul>
+        <p>🙏 Thank you so much to all the hosts for the invitation!<br>
+        We'll spread our celebration over two days: <strong>Friday, November 1st</strong> and <strong>Saturday, November 2nd</strong>, dedicating one day to Morgantown and the other to Fairmont. We plan to visit two houses on Friday and two houses on Saturday. We'll confirm the times and which families will host on Friday and which on Saturday soon.</p>
+        Your response will help our hosts prepare accordingly. Please respond by this Wednesday.</p>
+        <p>💃🎶 If you're also interested in doing any performance or contributing in any way, we warmly welcome your involvement!</p>
+        <p>Looking forward to your participation and wishing everyone a festive and bright <strong>Happy Tihar and Shuva Deepawali</strong> once again! 🌟<br>
+        Please wear a formal, traditional / Nepali dress if possible.</p>
+        <h5 class="mt-4">Here’s the schedule and plan for our Deusi Bhailo celebrations:</h5>
+        <ul>
+            <li>📅 <strong>Friday (Nov 1st) – Fairmont:</strong><br>
+                Meet at <strong>Chestnut Ridge Manor Apartments parking lot</strong> (779 Chestnut Ridge Rd, Morgantown, WV 26505) between 5:30 and 6:00 pm.<br>
+                🚗 We will leave Morgantown promptly at 6:00 pm (about a 30-minute drive).<br>
+                🎉 Start Deusi Bhailo at Ganga Dai’s house, then continue at Bishnu Dai’s place for more celebration.
+            </li>
+            <li>📅 <strong>Saturday (Nov 2nd) – Morgantown:</strong><br>
+                Meet at <strong>Chestnut Ridge Manor Apartments parking lot</strong> (779 Chestnut Ridge Rd, Morgantown, WV) at 6:00 pm.<br>
+                🚗 Leave at 6:15 pm to reach Dharendra Dai’s house by 6:30 pm.<br>
+                🎉 Begin Deusi Bhailo at Dharendra Dai’s house, then head to CR Dai’s house for games and more fun activities.
+            </li>
+        </ul>
+        <p>⏰ Please make sure to be on time both days so we can travel as a group and keep everything on schedule. Your punctuality will help us make the most of these celebrations!</p>
+        <p>Looking forward to celebrating together! 🥳</p>
+
+        <hr>
+        <!-- <h4 class="mt-5 mb-3">Gallery</h4> -->
+        <div class="row g-3" id="gallery"></div>
+        <!-- Modal for big image view -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark">
+                    <div class="modal-body p-0 text-center">
+                        <img id="modalImage" src="" alt="Big View" class="img-fluid rounded" style="max-height:80vh;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="/assets/gallery.js"></script>
+        <script>populateGallery('/assets/images/events/2025/tihar', 0);</script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
